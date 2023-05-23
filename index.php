@@ -39,8 +39,6 @@
           ],
 
      ];
-
-     $parcheggio = $_GET['parcheggio'];
      
 ?>
 
@@ -60,11 +58,24 @@
           <div class="mb-4">
                <h4>Filtri:</h4>
                <form action="index.php" method="GET">
+                    <label for="">Parcheggio</label>
                     <select name="parcheggio" id="">
                          <option value="">-- Scegli --</option>
                          <option value="1">Con parcheggio</option>
                          <option value="0">Senza parcheggio</option>
                     </select>
+
+                    <div>
+                         <label for="">Voto</label>
+                         <select name="voto" id="">
+                              <option value=""></option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                         </select>
+                    </div>
 
                     <button class="d-block mt-3" type="submit">Cerca</button>
                </form>
